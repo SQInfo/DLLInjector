@@ -1,15 +1,15 @@
-#inlude <windows.h>
+#include <windows.h>
 
 #define PROCESSID 5675
 
 BOOL InjectDLL(DWORD dwProcessId, LPCSTR lpszDLLPath)
 {
-  HANDLE  hProcess, hThread;
-  LPVOID  lpBaseAddr, lpFuncAddr;
-  DWORD   dwMemSize, dwExitCode;
-  BOOL    bSuccess = FALSE;
-  HMODULE hUserDLL;
-  
+	HANDLE  hProcess, hThread;
+	LPVOID  lpBaseAddr, lpFuncAddr;
+	DWORD   dwMemSize, dwExitCode;
+	BOOL    bSuccess = FALSE;
+	HMODULE hUserDLL;
+
 	if((hProcess = OpenProcess(PROCESS_CREATE_THREAD|PROCESS_QUERY_INFORMATION|PROCESS_VM_OPERATION
 		|PROCESS_VM_WRITE|PROCESS_VM_READ, FALSE, dwProcessId)))
 	{
@@ -52,3 +52,5 @@ int WINAPI WinMain(HINSTANCE hThisInstance, HINSTANCE hPrevInstance, LPSTR lpszC
 
 	return 0;
 }
+
+// Created by SQInfo && Coray ( DEV's )
