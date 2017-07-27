@@ -52,5 +52,3 @@ int WINAPI WinMain(HINSTANCE hThisInstance, HINSTANCE hPrevInstance, LPSTR lpszC
 
 	return 0;
 }
-
-// Created by Coray ( DEV's )
