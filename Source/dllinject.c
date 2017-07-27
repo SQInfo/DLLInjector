@@ -53,4 +53,4 @@ int WINAPI WinMain(HINSTANCE hThisInstance, HINSTANCE hPrevInstance, LPSTR lpszC
 	return 0;
 }
 
-// Created by SQInfo && Coray ( DEV's )
+// Created by Coray ( DEV's )
